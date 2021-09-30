@@ -1,0 +1,343 @@
+/* Global */
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;   
+}
+
+body {
+    font-family: "Times new roman",sans-serif;
+    overflow-x: hidden;
+    margin: 0%;
+    background-color: #f9f9f9;
+}
+/* Link style */
+a {
+    text-decoration: none;
+}
+
+ul{
+    list-style-type: none;
+}
+
+a:link, a:visited {
+    background-color: #6a6344;
+    color: white;
+    padding: 14px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.container-fluid {
+    
+    max-width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+/* Header */
+
+.header {
+    width: 100%;
+    padding-top: 10px;
+    
+    z-index: 1;
+    background-color:#6a6344;
+}
+
+/* Nav Bar */
+
+.nav-item {
+    font-family: "Times new roman";
+    color: white;
+    font-size:2rem;
+    letter-spacing: 2px;
+    
+    
+}
+.nav-list {
+    
+    padding-left:20%;
+    padding-right: 20%;
+    flex-direction:row;
+    display: flex;
+    align-items: center; 
+    justify-content:space-between;
+
+}
+
+.logo {
+    color: #f9f9f9;
+    font-size: 6rem;
+    font-family: "Times new rom<n";
+    cursor: pointer;  
+    padding-right: 4rem;
+}
+.logo:hover{
+    color: #353926 ;
+}
+
+
+/* Nav Link */
+
+.nav-link:hover{
+    color: #353926 ;
+}
+
+
+/*Hero*/
+
+.hero {
+    width:100%;
+    height:90rem;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("../images/design/Restaurantbilde.jpeg") center no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.title {
+    font-size: 80px;
+    color: #f9f9f9;  
+    font-family: 'Times New Roman', Times, serif;   
+}
+
+/* Go top */
+
+.go-top {
+    position:fixed;
+    width:2rem;
+    height:3rem;
+    bottom:2rem;
+    right:2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    border-radius: 50%;
+    z-index: 1000;
+    
+    
+}
+.go-top:hover {
+    color:#52593b;
+}
+
+/* About us */
+
+.about{
+    margin-top: 15%;
+    margin-bottom: 7%;
+    position:relative;
+    align-items: center;
+}
+
+.about-us{
+    font-size: 20px;
+    font-family:"Times new roman";
+    margin-right: 30%;
+}
+
+.about-item{
+    width: 400px;
+    margin-left: 30%;
+}
+
+.button{
+    width: 68.5%;
+    margin-top: 50px;
+    font-size: 18px;
+}
+.button:hover{
+    color: #353926
+}
+
+/* Rapport */
+
+.rapport-title{
+    font-size: 50px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+.gruppemedlem{
+    font-size: 25px;
+    text-align: center;
+}
+
+.gruppe{
+    align-items: center;
+    font-size: 15px;
+}
+.rapport{
+    text-align: center;
+    font-size: 20px;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+
+
+/* Opening hours */
+
+.opening-hours{
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    align-items: center;
+}
+
+/* OFFERS */
+
+.offers{
+    align-items: center;
+    width:100%;
+    background-color: #f9f9f9;
+    padding-bottom: 8rem;
+    
+}
+
+.section-title{
+    
+    text-align: center;
+    font-size: 50px;
+    font-family:"Times new roman";
+    padding:5rem;
+}
+
+.three-collums-grid{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap:5rem;
+    margin:0 auto;
+    text-align: center;
+}
+
+.two-collums-grid{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap:5rem;
+    margin:0 auto;
+    text-align: center;
+    
+}
+
+.section-title{
+    color: #52593b
+}
+
+.food-item{
+    font-size: 30px;
+    font-family:"Times new roman";
+}
+
+.food-desc{
+    margin-top: 4px;
+    font-size: 21px;
+
+}
+
+.allergens{
+    font-size: 18px;
+}
+
+.grid-item{
+    width: 100%;
+}
+
+/*Contact us*/
+
+.contact{
+    width: 100%;
+    height: 300px;
+    z-index: 1;
+    background-color:#6a6344;
+    
+}
+.message{
+    color: #f9f9f9;
+    font-size: 6rem;
+    font-family: "Times new roman"; 
+    
+}
+
+.social{
+    height: 40px;
+    width: 40px;
+    display: inline-block;
+}
+
+/*Footer*/
+
+.footer{
+    height: 100px;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.copyright {
+    color: #afafaf;
+    font-size: 2rem;
+    text-align: center;
+}
+
+@media only screen and (max-width: 1024px){
+
+    .paragraph {
+        margin: 0 auto;
+        max-width: 500px;
+    }
+    
+    .nav-list {
+        width: 80%;
+    }
+
+    .three-columns-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .two-columns-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .footer {
+        margin-top: 30rem;
+    }
+}
+    
+@media only screen and (max-width: 500px) {
+    .premium {
+        width: 200px;
+    }
+
+    .title {
+        font-size: 6rem;
+    }
+
+    .go-top {
+        right: 2rem;
+        bottom: 2rem;
+    }
+
+    .paragraph {
+        margin-bottom: 3rem;
+        margin-top: -3rem;
+    }
+
+    .three-columns-grid {
+        grid-gap: 0;
+    }
+
+    .footer {
+        margin-top: 40rem;
+    }
+
+    .copyright {
+        font-size: 1.2rem;
+    }
+}
